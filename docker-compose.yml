@@ -1,0 +1,10 @@
+revive:
+  extends:
+    file: ./docker/revive.yml
+    service: revive
+  links:
+    - mysql
+mysql:
+  extends:
+    file: ./docker/mysql.yml
+    service: mysql
