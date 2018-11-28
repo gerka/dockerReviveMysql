@@ -5,7 +5,6 @@ Docker Container with actual version of revive Ad server php7,nginx and mysql
 This is a simple project to up  the Revive AdServer quickly using docker.
 
 ## Folder Structure
-![Folder Structure](https://s4.postimg.org/ams946cbx/folder-structure.png)
 - **docker/** - Contains the same files based on docker-compose syntax to config how docker will execute the containers
 - **mysql/** - Initially, it Is a empty folder that is mapped to the mysql container, when the mysql container is running it will write the files within this folder, so you do not lose the data when the container is removed
 - **server/** - Contains a configuration file for nginx, this file is mapped to docker container to be read to nginx
