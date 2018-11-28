@@ -1,4 +1,4 @@
-FROM nginx:1.9.9
+FROM nginx:1.14.1
 
 RUN apt-get update && apt-get install -y \
   apt-transport-https \
@@ -29,8 +29,8 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /var/www/html
-RUN curl -L https://download.revive-adserver.com/revive-adserver-4.1.1.tar.gz | tar -zx -C /var/www/html/ --strip-components=1
-
+RUN curl -L https://download.revive-adserver.com/revive-adserver-4.1.4.tar.gz | tar -zxk -C /var/www/html/ --strip-components=1
+RUN curl -L https://download.revive-adserver.com/revive-adserver-4.1.4.tar.gz | tar -zxk -C /var/www/html/ --strip-components=1
 RUN find /var/www/html/var -type d -exec chmod 700 {} +
 RUN find /var/www/html/var -type f -exec chmod 600 {} +
 RUN chmod 700 /var/www/html/var
