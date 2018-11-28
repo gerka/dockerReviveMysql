@@ -1,6 +1,8 @@
 revive:
   build: .
   container_name: revive
+  privileged: true
+  restart: always
   ports:
     - "48654:80"
   volumes:
