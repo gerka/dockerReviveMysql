@@ -1,5 +1,5 @@
 # dockerReviveMysql
-Docker Container with actual version of revive Ad server php7,nginx and mysql
+Docker Container with actual version of revive Ad server 4.1.4 php7,nginx and mysql
 
 ## Introduction
 This is a simple project to up  the Revive AdServer quickly using docker.
